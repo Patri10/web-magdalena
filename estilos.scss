@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Nunito:wght@200 & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@100 & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Karla:ital,wght@1,300 & display=swap');
+
+$font1:'Nunito', sans-serif; 
+$font2:'Raleway', sans-serif;
+$font3:'Karla', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(4, 3, 2, 0.931); 
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    font-size: 27px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    align-items: center;
+    border-bottom: orange solid 3px;
+
+    h1{
+        font-family: $font2;
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-size: 40px;
+        padding: 0%;
+        margin-bottom: 0px;
+        text-align: center;
+        align-items: center;
+    }
+    .logo img{
+        height: 125px;
+        width: 110px;
+        align-items: center;
+    }
+
+    h2{
+        color: white;
+        padding: 0;
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+.fondoinicio{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    background-image: url(./images/pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 5px;
+    padding-top: 25px;
+
+    p{ 
+        color: white;
+        display: flex;
+        width: 400px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    li a{
+        
+        color: black;
+        font-family: $font1;
+        font-weight: 550;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 20px;
+        margin-top: 50px;
+        display: flex;
+        background-color: white;
+        width: 120px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-radius: 12px;
+        border: solid black 2px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+li a:hover{
+    background-color: orange;
+}
+}
+.item:hover {
+    filter: sepia(100%);
+    transform: scale(0.9);
+    transition: 0.9s;
+}
+
+
+
+.call p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.call a {
+    color: #fff;
+}
+
+.nosotros {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.86);
+}
+
+.nleft {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    background-image: url(./images/PRESENTACIÓN.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nright {
+    height: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    color:#fff; 
+    text-shadow:0 0 5px #040404;
+
+}
+
+.nright h3 {
+    font-size: 27px;
+    font-family: $font2;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #000,
+        0 0 5px #000;
+}
+
+.nright p{
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: $font1;
+    font-weight: bold;
+}
+
+.boton1 {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif
+}
+
+
+
+h2 {
+    background-color: #000;
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+    p{
+        font-size: 10px;
+    }
+    .redes{
+        font-size: 30px;
+    }
+}
+
+footer a {
+    color: white;
+    letter-spacing: 15px;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+.what {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: green;
+    text-shadow: 0 0 2px #000;
+    border-radius: 50%;
+}
+
+.what:hover {
+    background-color: green;
+}
+
+@media only screen and (min-width:480px) {
+
+    .nosotros {
+        display: flex;
+    }
+
+    .nleft,
+    .nright {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+    }
+}
+
+@import "_menu";
+@import "_nosotros";
+@import "_postres";
+@import "_contacto";

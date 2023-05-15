@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border-bottom: orange solid 3px;
+    h1{
+        color: orange;
+
+    }
+}
+
+.menu2{
+    background-image: url(./images/fondo\ postre.jpg);
+    background-color:#444;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    padding-left: 5px;
+    padding-top: 0px;
+
+    ul{
+        padding-top: 25px;
+    }
+    li a {
+        color: black;
+        font-family: $font1;
+        font-weight: 550;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 20px;
+        margin-top: 50px;
+        display: flex;
+        background-color: white;
+        width: 120px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-radius: 12px;
+        border: solid black 2px;
+    }
+
+    li a:hover{
+        background-color: orange;
+    }
+}
+
+.postre{
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 250px);
+
+    .postre2{
+        background-image: url(./images/postre\ 1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 40px;
+        margin-left: 50px;
+        border-radius: 5%;
+        background-color: orange;
+        border: solid black 2px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .postre3{
+        background-position: center;
+        background-size: cover;
+        padding: 50px;
+        margin: 50px;
+        border-radius: 5%;
+        background-color: orange;
+        border: solid black 2px;
+        width: 300px;
+        height: 200px;
+        background-image: url(./images/postre\ 2.jpg);
+
+    }
+
+    .postre4{
+        background-position: center;
+        background-size: cover;
+        padding: 50px;
+        margin: 50px;
+        margin-top: 10px;
+        border-radius: 5%;
+        background-color: orange;
+        border: solid black 2px;
+        width: 300px;
+        height: 200px;
+        background-image: url(./images/postre\ 3.jpg)
+        
+    }
+}
+.postre2{
+    height: 200px;
+    width: 100%;
+    border: 2px solid #fff;
+    background-color: #444;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0%);
+    transition: all 0.9s;
+}
+.postre2:hover{
+    filter: sepia(100%);
+    transform: scale(0.9);
+    transition: 0.9s;
+}
+.postre4{
+    height: 200px;
+    width: 100%;
+    border: 2px solid #fff;
+    background-color: #444;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0%);
+    transition: all 0.9s;
+}
+.postre4:hover{
+    filter: sepia(100%);
+    transform: scale(0.9);
+    transition: 0.9s;
+}
+.postre3{
+    height: 200px;
+    width: 100%;
+    border: 2px solid #fff;
+    background-color: #444;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0%);
+    transition: all 0.9s;
+}
+.postre3:hover{
+    filter: sepia(100%);
+    transform: scale(0.9);
+    transition: 0.9s;
+}

@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#contacto{
+    background-image: url(./images/fondo\ nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    padding: 90px;
+    margin-bottom: 0px;
+
+    .horizontal{
+    color: orange;
+    }
+
+    button{
+        background-color: white;
+        color: black;
+        border: black solid 2px;
+    }
+
+    button:hover{
+        background-color: orange;
+    }
+}
+
+.ss{
+    margin-bottom: 0px;
+    margin-top: -90px;
+}
+
